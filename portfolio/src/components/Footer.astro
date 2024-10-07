@@ -1,0 +1,26 @@
+---
+/* 
+FLEX FLEX-1 -> Indica que el elemento debe crecer proporcionalmente para ocupar todo el espacio disponible en el eje principal
+(horizontal por defecto). Si hay varios elementos con esta propiedad se repartirán el espacio.
+*/
+---
+
+<div class="flex bottom-0 w-full items-end mt-48">
+    <footer class="w-full text-gray-400">
+        <div class="flex justify-start gap-6">
+            <span class="ml-12">
+                2024 Portfolio personal. Todos los derechos reservados
+            </span>
+
+            <div class="flex flex-1 justify-end mr-12">
+                <span>Creado por Jorge Rodríguez</span>
+            </div>
+        </div>
+
+        <nav class="flex items-center justify-center gap-6">
+            <a href="/" class="p-4 transition hover:scale-110">Inicio</a>
+            <a href="#" class="p-4 transition hover:scale-110">Contacto</a>
+            <a href="#" class="p-4 transition hover:scale-110">About</a>
+        </nav>
+    </footer>
+</div>

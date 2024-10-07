@@ -1,0 +1,62 @@
+---
+import Proyect from "../icons/Proyect.astro";
+
+const proyects = [
+    {
+        title: "Asistente IA",
+        description:
+            "Asistente que mediante el RAG con información relevante, ayuda a usuarios de una organización a resolver incidencias.",
+        technologies: ["TypeScript", "React"],
+    },
+    {
+        title: "Asistente IA 2",
+        description:
+            "Prueba para saber si esto esta funcionando correctamente 1.",
+        technologies: ["TypeScript", "TypeScript", "TypeScript", "TypeScript"],
+    },
+    {
+        title: "Asistente IA 3",
+        description:
+            "Prueba para saber si esto esta funcionando correctamente 3.",
+        technologies: ["React"],
+    },
+];
+---
+
+<div class="grid mt-32 h-5/6 pb-64">
+    <div class="flex flex-col mx-auto justify-center">
+        <h1
+            class="flex flex-row gap-x-2 text-2xl font-semibold mb-8 opacity-80"
+        >
+            <Proyect /> Últimos proyectos
+        </h1>
+
+        <ul class="grid grid-cols-2 gap-4">
+            {
+                proyects.map((item) => (
+                    <li class="rounded-lg border p-2 w-76 flex flex-col">
+                        <article>
+                            <header>
+                                <a href="#" class="text-2xl text-gray-300 font-semibold">
+                                    {item.title}
+                                </a>
+                                <h3 class="text-sm text-gray-100 opacity-90 pt-4">
+                                    {item.description}
+                                </h3>
+                            </header>
+                            <footer class="mt-4 mb-2">
+                                <ul class="flex flex-wrap gap-3">
+                                    {item.technologies.map((technologie) => (
+                                        <li class="inline-flex rounded-full border p-2">
+                                            <h3 class="text-sm">{technologie}</h3>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </footer>
+                        </article>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</div>

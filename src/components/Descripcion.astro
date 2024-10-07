@@ -1,0 +1,54 @@
+---
+import Github from "../icons/Github.astro";
+import LinkedIn from "../icons/LinkedIn.astro";
+import Email from "../icons/Email.astro";
+---
+
+<div class="flex mx-auto mt-16">
+    <div
+        class="flex flex-col justify-center align-middle items-center gap-y-8 mt-8"
+    >
+        <img
+            src="/personal_img.jpg"
+            alt="Foto personal"
+            class="size-40 transition object-cover rounded-full hover:scale-125"
+        />
+
+        <span
+            class="flex justify-center gap-2 transition hover:scale-110 hover:bg-white-10"
+        >
+            <Email />
+            <span class="text-lg">jorgerr3007@gmail.com</span>
+        </span>
+
+        <ul>
+            <div class="flex flex-row justify-center gap-x-8">
+                <li class="transition hover:scale-125">
+                    <a href="https://github.com/jorgerr9011">
+                        <Github />
+                    </a>
+                </li>
+
+                <li class="transition hover:scale-125">
+                    <a href="https://www.linkedin.com/in/jorgerr9011/">
+                        <LinkedIn />
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <div class="flex flex-col mt-8 pl-16 gap-8">
+        <h2 class="text-white text-xl font-bold">Jorge Rodríguez</h2>
+
+        <h2 class="text-white text-xl text-wrap">
+            <span class="text-xl text-red-300/80">Ingeniero de Software </span>en La Coruña 🧑🏽‍💻🇪🇸
+        </h2>
+
+        <p class="text-lg opacity-80">
+            Apasionado por la tecnología. Siempre busco aprender y mejorar mis
+            habilidades. Disfruto trabajando en equipo y colaborando para
+            alcanzar objetivos comunes.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+---
+const skills = [
+    "React",
+    "TypeScript",
+    "Java",
+    "Python",
+    "JavaScript",
+    "Git",
+    "C",
+    "Docker",
+];
+---
+
+<>
+    <h2 class="mt-16">Skills</h2>
+    <ul class="grid grid-cols-4 gap-4 mt-6">
+        {
+            skills.map((element) => (
+                <li class="inline-flex rounded-full border p-2">
+                    <span class="text-sm">{element}</span>
+                </li>
+            ))
+        }
+    </ul>
+</>

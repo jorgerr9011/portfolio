@@ -1,5 +1,7 @@
 ---
+import { isYieldExpression } from "typescript";
 import Proyect from "../icons/Proyect.astro";
+import Tick from "../icons/Tick.astro";
 
 const proyects = [
     {
@@ -7,28 +9,31 @@ const proyects = [
         description:
             "Asistente que mediante el RAG con información relevante, ayuda a usuarios de una organización a resolver incidencias.",
         technologies: ["TypeScript", "React", "NextJs", "Tailwind"],
+        tick: true,
     },
     {
         title: "Comercio electrónico",
         description:
             "Aplicación Web que permite a una empresa de ropa ofrecer sus productos a los usuarios.",
         technologies: ["TypeScript", "React", "NextJs", "Tailwind"],
+        tick: false
     },
     {
         title: "Asistente IA 3",
         description:
             "Prueba para saber si esto esta funcionando correctamente 3.",
         technologies: ["React"],
+        tick: false
     },
 ];
 ---
 
-<div class="grid mt-32 h-5/6 pb-64">
+<div class="grid mt-12 h-5/6 pb-64">
     <div class="flex flex-col mx-auto justify-center">
         <h1
             class="flex flex-row gap-x-2 text-2xl font-semibold mb-8 opacity-80"
         >
-            <Proyect /> Últimos proyectos
+            <Proyect /> Últimos proyectos 
         </h1>
 
         <ul class="grid grid-cols-2 gap-4">
@@ -37,8 +42,8 @@ const proyects = [
                     <li class="rounded-lg border p-2 w-76 flex flex-col">
                         <article>
                             <header>
-                                <a href="#" class="text-2xl text-red-300/80 font-semibold">
-                                    {item.title}
+                                <a href="#" class="flex flex-row gap-3 text-2xl text-red-300/80 font-semibold">
+                                    {item.title} {item.tick && <Tick />}
                                 </a>
                                 <h3 class="text-sm text-gray-100 opacity-90 pt-4 text-pretty">
                                     {item.description}

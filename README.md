@@ -8,15 +8,11 @@ para transformar ideas en sitios web.
 
 # Tecnologías utilizadas
 
-![ASTRO](https://img.shields.io/badge/astro-%23E34F26.svg?style=for-the-badge&logo=astro&logoColor=white)
+![ASTRO](https://img.shields.io/badge/astro-%23BC52EE.svg?style=for-the-badge&logo=astro&logoColor=white)
 
-![Tailwind](https://img.shields.io/badge/tailwindcss-%06B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Tailwind](https://img.shields.io/badge/tailwindcss-%2306B6D4.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-![HTML](https://img.shields.io/badge/html5-%E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-![CSS](https://img.shields.io/badge/css3-%1572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![CSS](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-* Astro
-* Tailwind
-* HTML
-* CSS
